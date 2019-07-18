@@ -134,8 +134,8 @@ class Listing extends React.Component {
     ];
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
-    this.fetchItem(id);
     this.bc.postMessage(id);
+    this.fetchItem(id);
   }
 
   fetchItem(id) {
