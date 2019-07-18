@@ -8,5 +8,6 @@ module.exports = {
     password: 'password',
     database: 'database_name'
   },
+
   URL: `http://exampleurl.com`
 };
