@@ -151,7 +151,7 @@ const retrieveItem = (id, callback) => {
     .where({ listing_id: id })
     .then(row => {
       console.log('Successfully retrieved item details using knex: ', row);
-      callback(row);
+      callback(null, row);
     })
     .catch(error => {
       console.log('Error retrieving item: ', error);

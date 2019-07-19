@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title.js';
 import Details from './Details.js';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Spinner, Container, Row, Col, Image } from 'react-bootstrap';
 import axios from 'axios';
 import config from '../../../config.js';
 
@@ -12,6 +12,7 @@ class Listing extends React.Component {
     this.bc = new BroadcastChannel('regretfully');
 
     this.state = {
+      loading: true,
       item_id: null,
       title: '',
       description: '',
@@ -26,6 +27,7 @@ class Listing extends React.Component {
     };
 
     this.fetchItem = this.fetchItem.bind(this);
+    this.handlePageLoading = this.handlePageLoading.bind(this);
   }
 
   componentDidMount() {
@@ -138,12 +140,19 @@ class Listing extends React.Component {
     this.fetchItem(id);
   }
 
+  handlePageLoading() {
+    this.setState({
+      loading: !this.state.loading
+    });
+  }
+
   fetchItem(id) {
     axios
       .get(`${config.URL}/details/${id}`)
       .then(response => {
         console.log('fetchItem: ', response.data[0]);
         this.setState({
+          loading: false,
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
           description: response.data[0].description,
@@ -168,6 +177,13 @@ class Listing extends React.Component {
 
     return (
       <div>
+        {this.state.loading && (
+          <div id='loading'>
+            <Spinner animation='border' role='status'>
+              <span className='sr-only'>Loading...</span>
+            </Spinner>
+          </div>
+        )}
         <Container>
           <Row>
             <Col lg={8}>
