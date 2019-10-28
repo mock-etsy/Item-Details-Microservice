@@ -20,8 +20,12 @@ const HOST = host || '0.0.0.0';
 // db.seedDBSellers(sellerData);
 
 app.get('/details/:id', (req, res) => {
-  db.retrieveItem(req.params.id, response => {
-    res.send(response);
+  db.retrieveItem(req.params.id, (err, response) => {
+    if (err) {
+      res.sendStatus(400);
+    } else {
+      res.status(200).send(response);
+    }
   });
 });
 
