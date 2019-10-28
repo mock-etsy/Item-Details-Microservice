@@ -1,19 +1,28 @@
-# RegrEtsy Item Details and Add to Cart Component
+# Mock Etsy Item Details Micro-Service
 
-> Implement item details and add to cart component for an Etsy clone. Will be packaged with other microservices to approximate a functional item listing page.
+> Implemented an item details, image carousel, and add to cart component for an Etsy clone. Packaged with other microservices to approximate a functional Etsy item listing page.
 
 ## Related Projects
 
-- https://github.com/regretsy-hratx42/item-details
-- https://github.com/regretsy-hratx42/header-and-search
-- https://github.com/regretsy-hratx42/image-carousel
-- https://github.com/regretsy-hratx42/cnebs-reviews
+- https://github.com/mock-etsy/item-details
+- https://github.com/mock-etsy/header-and-search
+- https://github.com/mock-etsy/cnebs-reviews
 
-## Table of Contents
+## Tech Stack
 
-1. [Usage](#usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+- React
+- JavaScript
+- Node.js
+- Express
+- Axios
+- MySQL
+- knex.js
+- Babel
+- Webpack
+- React-Bootstrap
+- Broadcast Channel API
+- Docker
+- AWS (Elastic Beanstalk & RDS)
 
 ## Usage
 
@@ -23,12 +32,6 @@
 > Start server with following: npm run server-dev
 > Navigate to site by going to localhost:3001 (port subject to change)
 
-## Requirements
-
-- Node 6.13.0
-- etc
-
-## Development
 
 ### Installing Dependencies
 
