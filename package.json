@@ -1,7 +1,7 @@
 {
-  "name": "regretsy-item-details",
+  "name": "mock-etsy-item-details",
   "version": "1.0.0",
-  "description": "Item details and add to cart component for an Etsy clone",
+  "description": "Item details microservice for an Etsy clone",
   "author": "Brooke Snellings",
   "license": "",
   "engines": {
