@@ -41,6 +41,10 @@ Our team's microservices communicated via Broadcast Channel API and were stitche
 
 ![](ScreenShot2.png)
 
+A preview of the microservices stitched together:
+
+![](fec.gif)
+
 ## Usage
 
 > Some usage instructions:
