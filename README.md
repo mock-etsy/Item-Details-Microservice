@@ -1,6 +1,6 @@
 # Mock Etsy Item Details Microservice
 
-> Implemented an item details component for an Etsy clone. Packaged with other microservices using a reverse proxy server to approximate a functional Etsy item listing page.
+> Implemented and styled an item details component for an Etsy clone. Packaged with other microservices using a reverse proxy server to approximate a functional Etsy item listing page.
 
 ![](ScreenShot1.png)
 
