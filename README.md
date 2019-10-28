@@ -1,6 +1,6 @@
 # Mock Etsy Item Details Micro-Service
 
-> Implemented an item details, image carousel, and add to cart component for an Etsy clone. Packaged with other microservices to approximate a functional Etsy item listing page.
+> Implemented an item details component for an Etsy clone. Packaged with other microservices to approximate a functional Etsy item listing page.
 
 ## Related Projects
 
