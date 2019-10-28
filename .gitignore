@@ -1,3 +1,5 @@
 node_modules
 .env
 awscli-bundle
+config.js
+dist/bundle.js

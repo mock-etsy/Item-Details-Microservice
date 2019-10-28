@@ -142,7 +142,7 @@ class Listing extends React.Component {
   fetchItem(id) {
     axios
       .get(
-        `http://regretsy-item-details.us-east-2.elasticbeanstalk.com/details/${id}`
+        `/details/${id}`
       )
       .then(response => {
         console.log('Fetched item: ', response.data[0]);
