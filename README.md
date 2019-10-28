@@ -44,9 +44,9 @@ Our team's microservices communicated via Broadcast Channel API and were stitche
 ## Usage
 
 > Some usage instructions:
-> npm install
-> Start server with following: npm run server-dev
-> Navigate to site by going to localhost:3001 (port subject to change)
+1. npm install
+2. Start server with following: npm run server-dev
+3. Navigate to site by going to localhost:3001 (port subject to change)
 
 ### Installing Dependencies
 
