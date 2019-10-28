@@ -1,4 +1,4 @@
-# Mock Etsy Item Details Micro-Service
+# Mock Etsy Item Details Microservice
 
 > Implemented an item details component for an Etsy clone. Packaged with other microservices to approximate a functional Etsy item listing page.
 
