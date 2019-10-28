@@ -37,7 +37,7 @@ I refactored to use knex.js to sanitize database queries and decrease security v
 
 ## Stitching together the microservices
 
-Our team's microservices communicated via Broadcast Channel API and were stitched together with a reverse proxy server.
+Our team's microservices communicated via Broadcast Channel API and were stitched together with a [reverse proxy server](https://github.com/mock-etsy/brooke-proxy).
 
 ![](ScreenShot2.png)
 
